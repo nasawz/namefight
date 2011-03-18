@@ -1,0 +1,265 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18274F7C133310B00035D93D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18274F7B133310B00035D93D /* UIKit.framework */; };
+		18274F7E133310B00035D93D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18274F7D133310B00035D93D /* Foundation.framework */; };
+		18274F80133310B00035D93D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18274F7F133310B00035D93D /* CoreGraphics.framework */; };
+		18274F86133310B00035D93D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18274F84133310B00035D93D /* InfoPlist.strings */; };
+		18274F89133310B00035D93D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18274F88133310B00035D93D /* main.m */; };
+		18274F8C133310B00035D93D /* NameFight3AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18274F8B133310B00035D93D /* NameFight3AppDelegate.m */; };
+		18274F8F133310B00035D93D /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18274F8D133310B00035D93D /* MainWindow.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18274F77133310B00035D93D /* NameFight3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NameFight3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18274F7B133310B00035D93D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		18274F7D133310B00035D93D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		18274F7F133310B00035D93D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		18274F83133310B00035D93D /* NameFight3-Info.plist */ = {isa = PBXFileReference; path = "NameFight3-Info.plist"; sourceTree = "<group>"; };
+		18274F85133310B00035D93D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18274F87133310B00035D93D /* NameFight3-Prefix.pch */ = {isa = PBXFileReference; path = "NameFight3-Prefix.pch"; sourceTree = "<group>"; };
+		18274F88133310B00035D93D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18274F8A133310B00035D93D /* NameFight3AppDelegate.h */ = {isa = PBXFileReference; path = NameFight3AppDelegate.h; sourceTree = "<group>"; };
+		18274F8B133310B00035D93D /* NameFight3AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NameFight3AppDelegate.m; sourceTree = "<group>"; };
+		18274F8E133310B00035D93D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18274F74133310B00035D93D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18274F7C133310B00035D93D /* UIKit.framework in Frameworks */,
+				18274F7E133310B00035D93D /* Foundation.framework in Frameworks */,
+				18274F80133310B00035D93D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18274F6C133310B00035D93D = {
+			isa = PBXGroup;
+			children = (
+				18274F81133310B00035D93D /* NameFight3 */,
+				18274F7A133310B00035D93D /* Frameworks */,
+				18274F78133310B00035D93D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18274F78133310B00035D93D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18274F77133310B00035D93D /* NameFight3.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18274F7A133310B00035D93D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18274F7B133310B00035D93D /* UIKit.framework */,
+				18274F7D133310B00035D93D /* Foundation.framework */,
+				18274F7F133310B00035D93D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18274F81133310B00035D93D /* NameFight3 */ = {
+			isa = PBXGroup;
+			children = (
+				18274F8A133310B00035D93D /* NameFight3AppDelegate.h */,
+				18274F8B133310B00035D93D /* NameFight3AppDelegate.m */,
+				18274F8D133310B00035D93D /* MainWindow.xib */,
+				18274F82133310B00035D93D /* Supporting Files */,
+			);
+			path = NameFight3;
+			sourceTree = "<group>";
+		};
+		18274F82133310B00035D93D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18274F83133310B00035D93D /* NameFight3-Info.plist */,
+				18274F84133310B00035D93D /* InfoPlist.strings */,
+				18274F87133310B00035D93D /* NameFight3-Prefix.pch */,
+				18274F88133310B00035D93D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18274F76133310B00035D93D /* NameFight3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18274F92133310B00035D93D /* Build configuration list for PBXNativeTarget "NameFight3" */;
+			buildPhases = (
+				18274F73133310B00035D93D /* Sources */,
+				18274F74133310B00035D93D /* Frameworks */,
+				18274F75133310B00035D93D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NameFight3;
+			productName = NameFight3;
+			productReference = 18274F77133310B00035D93D /* NameFight3.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18274F6E133310B00035D93D /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 18274F71133310B00035D93D /* Build configuration list for PBXProject "NameFight3" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 18274F6C133310B00035D93D;
+			productRefGroup = 18274F78133310B00035D93D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18274F76133310B00035D93D /* NameFight3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18274F75133310B00035D93D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18274F86133310B00035D93D /* InfoPlist.strings in Resources */,
+				18274F8F133310B00035D93D /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18274F73133310B00035D93D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18274F89133310B00035D93D /* main.m in Sources */,
+				18274F8C133310B00035D93D /* NameFight3AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18274F84133310B00035D93D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18274F85133310B00035D93D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		18274F8D133310B00035D93D /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18274F8E133310B00035D93D /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18274F90133310B00035D93D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18274F91133310B00035D93D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		18274F93133310B00035D93D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NameFight3/NameFight3-Prefix.pch";
+				INFOPLIST_FILE = "NameFight3/NameFight3-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		18274F94133310B00035D93D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NameFight3/NameFight3-Prefix.pch";
+				INFOPLIST_FILE = "NameFight3/NameFight3-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18274F71133310B00035D93D /* Build configuration list for PBXProject "NameFight3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18274F90133310B00035D93D /* Debug */,
+				18274F91133310B00035D93D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18274F92133310B00035D93D /* Build configuration list for PBXNativeTarget "NameFight3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18274F93133310B00035D93D /* Debug */,
+				18274F94133310B00035D93D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18274F6E133310B00035D93D /* Project object */;
+}
