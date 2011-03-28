@@ -11,4 +11,9 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+    #import <Three20/Three20.h>
+    #import <Three20/Three20+Additions.h>
+    #import "UINavigationBar+Additions.h"
+    #import "NSString+MD5.h"
 #endif

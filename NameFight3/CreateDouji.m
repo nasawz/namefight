@@ -17,8 +17,8 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-		self.title = @"Douji";
-		self.tabBarItem = [[[UITabBarItem alloc] initWithTitle:@"Douji" image:nil tag:0] autorelease];
+		self.title = @"Create Douji";
+		self.tabBarItem = [[[UITabBarItem alloc] initWithTitle:@"douji" image:nil tag:0] autorelease];
     }
     return self;
 }
@@ -53,11 +53,11 @@
 	[self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"bg.png"]]];
     
     
-    UIApplication *app = [UIApplication sharedApplication];
-    AppDelegate * delegate = app.delegate;
-    
-    Douji * douji = (Douji *)[NSEntityDescription insertNewObjectForEntityForName:@"Douji" inManagedObjectContext:[delegate managedObjectContext]];
-//   
+//    UIApplication *app = [UIApplication sharedApplication];
+//    AppDelegate * delegate = app.delegate;
+//    
+//    Douji * douji = (Douji *)[NSEntityDescription insertNewObjectForEntityForName:@"Douji" inManagedObjectContext:[delegate managedObjectContext]];
+   
 	//天-3 地-2 玄-1 黄-0
     //高-2 中-1 低-0
     
@@ -78,20 +78,20 @@
 //    douji.formatstr = @"%@微眯着眼睛嘴角缓缓的拉起一抹清冷的弧度。摊开的右手，骤然一握，一股凶猛的吸力，自掌心中激射而出：“玄阶斗技：吸掌！”%@双脚下意识的抓紧地面，然而还未等到推力的到来，一股吸力，却是将之扯得猛的朝前一抛。";
 //    douji.property = @"agi";    
     
-    douji.name = @"铁山拳";
-    douji.usefor = @"1";
-    douji.caption = @"黄阶高级斗技，威力不俗，需要斗之气七段以上，方才有资格修习";
-    douji.toplevel = [NSNumber numberWithInt:0];	
-    douji.sublevel = [NSNumber numberWithInt:2];
-    douji.formatstr = @"一声暴喝，%@拳头猛的紧握，一股尖锐的破风劲气，在半空中低沉的响起，旋即对着%@肩膀落去";
-    douji.property = @"act";        
+//    douji.name = @"铁山拳";
+//    douji.usefor = @"1";
+//    douji.caption = @"黄阶高级斗技，威力不俗，需要斗之气七段以上，方才有资格修习";
+//    douji.toplevel = [NSNumber numberWithInt:0];	
+//    douji.sublevel = [NSNumber numberWithInt:2];
+//    douji.formatstr = @"一声暴喝，%@拳头猛的紧握，一股尖锐的破风劲气，在半空中低沉的响起，旋即对着%@肩膀落去";
+//    douji.property = @"act";        
     
-    NSError *error = nil;
-    if (![[delegate managedObjectContext] save:&error]) {
-        NSLog(@"Error %@",[error localizedDescription]);
-    }else{
-        NSLog(@"成功创建斗技：%@",douji.name);
-    } 
+//    NSError *error = nil;
+//    if (![[delegate managedObjectContext] save:&error]) {
+//        NSLog(@"Error %@",[error localizedDescription]);
+//    }else{
+//        NSLog(@"成功创建斗技：%@",douji.name);
+//    } 
 }
 
 

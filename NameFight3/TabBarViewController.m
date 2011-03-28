@@ -18,12 +18,13 @@
 //					 @"tt://powerful",
 //					 @"tt://build",
 //					 nil];
-//	[self setTabURLs:[NSArray arrayWithObjects:
-//                      @"tt://home",
-//                      @"tt://douji",
-//                      @"tt://fight",
-//                      @"tt://powerful",
-//                      @"tt://build",
-//                      nil]];
+	[self setTabURLs:[NSArray arrayWithObjects:
+                      @"tt://home",
+                      @"tt://doufa",
+                      @"tt://douji",
+                      @"tt://fight",
+					  @"tt://powerful",
+                      @"tt://build",
+                      nil]];
 }
 @end

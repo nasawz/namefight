@@ -15,6 +15,7 @@
 - (NSDictionary *)createPersonProperty:(NSString *)name;
 - (void)chkin:(NSString *)name;
 - (Douji *)getDouji:(Person *)person;
+- (Doufa *)getDoufa:(Person *)person;
 @end
 
 @implementation PersonChkin
@@ -171,6 +172,12 @@
             person.lost = [NSNumber numberWithInt:0];//失败次数
             person.score = [NSNumber numberWithInt:0];//得分
 
+            Doufa * df = [self getDoufa:person];
+            if (df != nil) {
+                person.doufa = df;
+                NSLog(@"df name is %@",[df name]);
+            }
+            
             Douji * dj = [self getDouji:person];
             if (dj != nil) {
                 [person addDoujiObject:dj];
@@ -183,17 +190,44 @@
                 NSLog(@"dj2 name is %@",[dj2 name]);
             }
             
-//            error = nil;
-//            if (![[delegate managedObjectContext] save:&error]) {
-//                NSLog(@"Error %@",[error localizedDescription]);
-//            }else{
-//                NSLog(@"%@ 成功迁入斗气大陆",name);
-//            } 
+            
+            
+            error = nil;
+            if (![[delegate managedObjectContext] save:&error]) {
+                NSLog(@"Error %@",[error localizedDescription]);
+            }else{
+                NSLog(@"%@ 成功迁入斗气大陆",name);
+            } 
             
         }else{
             NSLog(@"%@ 已迁入斗气大陆",name);
         }
     }
+}
+
+- (Doufa *)getDoufa:(Person *)person {
+    UIApplication *app = [UIApplication sharedApplication];
+    AppDelegate * delegate = app.delegate;  
+    
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Doufa" inManagedObjectContext:[delegate managedObjectContext]];
+    NSFetchRequest *fetchRequest = [[[NSFetchRequest alloc] init] autorelease];
+    [fetchRequest setEntity:entity];
+    
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES selector:nil];
+	NSArray *descriptors = [NSArray arrayWithObject:sortDescriptor];
+	[fetchRequest setSortDescriptors:descriptors];
+    [sortDescriptor release];
+    
+    NSError *error = nil;
+    NSArray *array = [[delegate managedObjectContext] executeFetchRequest:fetchRequest error:&error];
+    if (array != nil){
+        int total = [array count];
+        NSLog(@"doufa count is %d",total);
+        if ([[person douji] count] == 0) {
+            return [array objectAtIndex:rand()%total];
+        }
+    }
+    return nil;
 }
 
 - (Douji *)getDouji:(Person *)person {
@@ -243,14 +277,6 @@
     //NSLog(@"textFieldDidEndEditing %@",textField.text);
     //[self createPersonProperty];
 }
-
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations.
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.

@@ -1,4 +1,4 @@
-    //
+//
 //  Build.m
 //  NameFight-dp
 //
@@ -14,6 +14,7 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        //NSLog(@"initWithNibName");
 		self.title = @"Build";
 		self.tabBarItem = [[[UITabBarItem alloc] initWithTitle:@"Build" image:nil tag:0] autorelease];
     }

@@ -13,8 +13,14 @@
     Person * _player1;
     Person * _player2;
     
-    NSNumber * blood1;
-    NSNumber * blood2;
+    int blood1;
+    int blood2;
+    int dex1;
+    int dex2;
+    int agi1;
+    int agi2;
+    int act1;
+    int act2;
 }
 
 @property (nonatomic, retain) Person * player1;
